@@ -1,1 +1,1 @@
-# rsschool-cv
+https://lykovilya.github.io/rsschool-cv/
