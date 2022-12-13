@@ -5,18 +5,54 @@
           box-sizing: border-box;
 }
 
+body {
+  background: gray;
+  font-size: 20px;
+}
+
+.title-hidden {
+  display: none;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: gray;
+}
+
 .page-header {
+  background: gray;
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
 }
 .page-header__inner {
+  max-width: 1238px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
   height: 80px;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .page-header-nav__list {
   display: -webkit-box;
@@ -28,9 +64,64 @@
 .page-header-nav__item {
   display: list-item;
   margin-left: 32px;
+  list-style: none;
 }
 .page-header-nav__link {
   display: inline-block;
   text-decoration: none;
   padding: 1rem 0;
+}
+
+.main-wrapper {
+  padding-top: 80px;
+  margin: 0 auto;
+}
+
+main .container {
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
+.about-myself {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1238px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: flex;
+  min-height: auto;
+  padding-top: 20px;
+}
+.about-myself__photo img {
+  height: 500px;
+  width: 328px;
+  border-radius: 15px;
+}
+.about-myself__descr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 40px;
+}
+.about-myself__descr-title {
+  font-size: 50px;
+}
+.about-myself__descr-text p {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }/*# sourceMappingURL=style.css.map */

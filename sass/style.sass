@@ -2,16 +2,35 @@
     margin: 0
     padding: 0
     box-sizing: border-box
+body
+    background: gray
+    font-size: 20px
+
+.title-hidden
+    display: none
+
+.wrapper
+    display: flex
+    padding: 0 20px
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background: gray
 
 .page-header
+    background: gray
     position: fixed
     left: 0
     top: 0
     width: 100%
     &__inner
+        max-width: 1238px
         display: flex
         margin: 0 auto
         height: 80px
+        display: flex
+        align-items: center
+        justify-content: space-between
     &-nav
         &__list
             display: flex
@@ -19,7 +38,42 @@
         &__item
             display: list-item
             margin-left: 32px
+            list-style: none
         &__link
             display: inline-block
             text-decoration: none
             padding: 1rem 0
+
+.main-wrapper
+    padding-top: 80px
+    margin: 0 auto
+
+main .container
+    margin: 0 auto
+    max-width: 1080px
+
+.about-myself
+    display: flex
+    max-width: 1238px
+    flex-direction: row
+    justify-content: center
+    display: flex
+    min-height: auto
+    padding-top: 20px
+    &__photo
+        img
+            height: 500px
+            width: 328px
+            border-radius: 15px
+    &__descr
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: center
+        padding-left: 40px
+        &-title
+            font-size: 50px
+        &-text
+            p
+                padding-top: 10px
+                padding-bottom: 10px
